@@ -62,7 +62,7 @@ def select_model(train_counts, vdxn_counts, test_counts,
     M = np.argmax(accuracy)
 
     # visualize tree as a .dot file
-    eg(trees[M], out_file='tree.dot', max_depth=6,filled=True, rounded=True, \
+    eg(trees[M], out_file='tree.dot', max_depth=2,filled=True, rounded=True, \
        feature_names=features, class_names=["Fake","Real"])
     return trees[M]
 
